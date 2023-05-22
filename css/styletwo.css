@@ -2,7 +2,7 @@ body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
     padding:0;
     margin:0;
-    background-color:#F4EEED;
+    background-color:#65a651;
   }
  
   /* Global */
@@ -19,32 +19,32 @@ body{
  
   .button_1{
     height:38px;
-    background:#999B84;
+    background:#565837;
     border:0;
     padding-left: 20px;
     padding-right:20px;
-    color:#ffffff;
+    color:#284c36;
   }
  
   .dark{
     padding:15px;
-    background:#CBD3BA;
-    color:#ffffff;
+    background:#697355;
+    color:#a8de7e;
     margin-top:10px;
     margin-bottom:10px;
   }
  
   /* Header **/
   header{
-    background:#DDB7AB;
-    color:#ffffff;
+    background:#384415;
+    color:#8ed99c;
     padding-top:30px;
     min-height:70px;
-    border-bottom:#C09984 3px solid;
+    border-bottom:#58c056 3px solid;
   }
  
   header a{
-    color:#ffffff;
+    color:#265937;
     text-decoration:none;
     text-transform: uppercase;
     font-size:16px;
