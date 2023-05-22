@@ -8,6 +8,56 @@
         <Title> Page 1 Hi! </Title>
         <link rel="stylesheet" href ="./css/style.css">
     </head>
+    <head>
+        <title>Guess the Number</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+          }
+      
+          h1 {
+            color: #333;
+          }
+      
+          #result {
+            font-weight: bold;
+            margin-top: 20px;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Guess the Number</h1>
+      
+        <p>Guess a number between 1 and 100:</p>
+        <input type="number" id="guessInput">
+        <button onclick="checkGuess()">Submit</button>
+      
+        <p id="result"></p>
+      
+        <script>
+          var randomNumber = Math.floor(Math.random() * 100) + 1;
+          var resultText = document.getElementById("result");
+      
+          function checkGuess() {
+            var guessInput = document.getElementById("guessInput");
+            var guess = parseInt(guessInput.value);
+      
+            if (isNaN(guess) || guess < 1 || guess > 100) {
+              resultText.textContent = "Please enter a valid number between 1 and 100.";
+            } else if (guess < randomNumber) {
+              resultText.textContent = "Too low! Try again.";
+            } else if (guess > randomNumber) {
+              resultText.textContent = "Too high! Try again.";
+            } else {
+              resultText.textContent = "Congratulations! You guessed the correct number.";
+            }
+            
+            guessInput.value = "";
+            guessInput.focus();
+          }
+        </script>
+      </body>      
     <body>
         <header>
             <div class="container" >
