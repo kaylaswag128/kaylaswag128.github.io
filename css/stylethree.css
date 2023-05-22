@@ -1,36 +1,9 @@
+/* Body */
 body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #65a651;
-  }
-  
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .button_1 {
-    height: 38px;
-    background: #565837;
-    border: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #284c36;
-  }
-  
-  .dark {
-    padding: 15px;
-    background: #697355;
-    color: #a8de7e;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
   
   /* Header */
@@ -42,168 +15,151 @@ body {
     border-bottom: #58c056 3px solid;
   }
   
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
   header a {
-    color: #265937;
+    color: #a8de7e;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
   }
   
-  header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
-  
-  header #branding {
-    float: left;
-  }
-  
-  header #branding h1 {
+  header nav ul {
+    list-style: none;
     margin: 0;
+    padding: 0;
   }
   
-  header nav {
-    float: right;
-    margin-top: 10px;
+  header nav li {
+    display: inline-block;
+    margin-right: 20px;
   }
   
-  header .highlight,
-  header .current a {
+  header nav a {
     color: #a8de7e;
     font-weight: bold;
   }
   
-  header a:hover {
-    color: #a8de7e;
-    font-weight: bold;
+  header nav a:hover {
+    color: #fff;
   }
   
   /* Showcase */
   #showcase {
     min-height: 400px;
-    background: url('../images/showw.jpg') no-repeat 50%;
+    background: url('../images/showw.jpg') no-repeat center center/cover;
     text-align: center;
-    color: #a8de7e;
+    color: #fff;
+    padding: 100px 0;
   }
   
   #showcase h1 {
-    margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    margin-bottom: 20px;
   }
   
   #showcase p {
     font-size: 20px;
+    color: #a8de7e;
   }
   
-  /* Newsletter */
+  /* Updates */
   #updates {
     padding: 15px;
-    color: #a8de7e;
-    background: #a8de7e;
+    color: #fff;
+    background: #697355;
   }
   
   #updates h1 {
-    float: left;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   
   #updates form {
-    float: right;
     margin-top: 15px;
   }
   
   #updates input[type="email"] {
-    padding: 4px;
-    height: 25px;
-    width: 250px;
+    padding: 8px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  #updates button {
+    height: 40px;
+    background: #565837;
+    border: none;
+    color: #284c36;
+    font-weight: bold;
+    width: 100%;
   }
   
   /* Boxes */
   #boxes {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   
   #boxes .box {
-    float: left;
     text-align: center;
     width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  #boxes .box:hover {
+    transform: translateY(-10px);
   }
   
   #boxes .box img {
-    width: 80%;
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
   }
   
-  /* Sidebar */
-  aside#sidebar {
-    float: right;
-    width: 30%;
-    margin-top: 10px;
-  }
-  
-  aside#sidebar .quote input,
-  aside#sidebar .quote textarea {
-    width: 90%;
-    padding: 5px;
-  }
-  
-  /* Main-col */
-  article#main-col {
-    float: left;
-    width: 65%;
-  }
-  
-  /* Services */
-  ul#services li {
-    list-style: none;
-    padding: 20px;
-    border: #a8de7e solid 1px;
-    margin-bottom: 5px;
-    background: #e6e6e6;
-  }
-  
+  /* Footer */
   footer {
     padding: 20px;
-    margin-top: 20px;
-    color: #52c862;
-    background-color: #999B84;
+    margin-top: 40px;
+    color: #fff;
+    background-color: #999b84;
     text-align: center;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #a8de7e;
+    text-decoration: none;
   }
   
   /* Media Queries */
   @media (max-width: 768px) {
-    header #branding,
-    header nav,
-    header nav li,
-    #newsletter h1,
-    #newsletter form,
-    #boxes .box,
-    article#main-col,
-    aside#sidebar {
-      float: none;
-      text-align: center;
-      width: 100%;
+    header h1 {
+      font-size: 24px;
     }
   
-    header {
-      padding-bottom: 20px;
+    header nav li {
+      display: block;
+      margin: 10px 0;
     }
   
     #showcase h1 {
+      font-size: 36px;
       margin-top: 40px;
     }
   
-    #newsletter button,
-    .quote button {
-      display: block;
-      width: 100%;
-    }
-  
-    #newsletter form input[type="email"],
-    .quote input,
-    .quote textarea {
-      width: 100%;
-      margin-bottom: 5px;
+    #updates h1 {
+      font-size: 20px;
     }
   }
   
