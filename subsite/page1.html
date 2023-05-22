@@ -1,91 +1,100 @@
+
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content = "Good boba shops supported with reviews and drink recommendations!">
-        <meta name="keywords" content = "boba, yummy, drinks, snacks, asian">
-        <meta name = "author" content = "kayla pham :)">
-        <Title> Page 1 Hi! </Title>
-        <link rel="stylesheet" href ="./css/style.css">
-    </head>
-    <head>
-        <title>Guess the Number</title>
-        <style>
-          body {
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Good boba shops supported with reviews and drink recommendations!">
+    <meta name="keywords" content="boba, yummy, drinks, snacks, asian">
+    <meta name="author" content="kayla pham :)">
+    <title>Page 1 Hi!</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
             font-family: Arial, sans-serif;
             text-align: center;
-          }
-      
-          h1 {
+        }
+
+        h1 {
             color: #333;
-          }
-      
-          #result {
+        }
+
+        #result {
             font-weight: bold;
             margin-top: 20px;
-          }
-        </style>
-      </head>
-      <body>
-        <h1>Guess the Number</h1>
-      
-        <p>Guess a number between 1 and 100:</p>
-        <input type="number" id="guessInput">
-        <button onclick="checkGuess()">Submit</button>
-      
-        <p id="result"></p>
-      
-        <script>
-          var randomNumber = Math.floor(Math.random() * 100) + 1;
-          var resultText = document.getElementById("result");
-      
-          function checkGuess() {
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Boba</span> Shop Reviews!</h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <ul>
+                <li><a href="/../index.html">Back to Boba Home!</a></li>
+                <li><a href="page2.html">Page 2!</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="updates">
+        <div class="container">
+            <!-- Placeholder for content in the updates section -->
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <!-- Placeholder for content in the boxes section -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Kayla Loves Boba, Copyright &copy; 2022</p>
+        <ul>
+            <li><a href="./subsite/page1.html">Subpage Special</a></li>
+        </ul>
+    </footer>
+
+    <h1>Guess the Number</h1>
+
+    <p>Guess a number between 1 and 100:</p>
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">Submit</button>
+
+    <p id="result"></p>
+
+    <script>
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+        var resultText = document.getElementById("result");
+
+        function checkGuess() {
             var guessInput = document.getElementById("guessInput");
             var guess = parseInt(guessInput.value);
-      
+
             if (isNaN(guess) || guess < 1 || guess > 100) {
-              resultText.textContent = "Please enter a valid number between 1 and 100.";
+                resultText.textContent = "Please enter a valid number between 1 and 100.";
             } else if (guess < randomNumber) {
-              resultText.textContent = "Too low! Try again.";
+                resultText.textContent = "Too low! Try again.";
             } else if (guess > randomNumber) {
-              resultText.textContent = "Too high! Try again.";
+                resultText.textContent = "Too high! Try again.";
             } else {
-              resultText.textContent = "Congratulations! You guessed the correct number.";
+                resultText.textContent = "Congratulations! You guessed the correct number.";
             }
-            
+
             guessInput.value = "";
             guessInput.focus();
-          }
-        </script>
-      </body>      
-    <body>
-        <header>
-            <div class="container" >
-                <div id="branding">
-                    <h1><span class="highlight" >Boba </span>Shop Reviews! </h1>
-                </div>
-            </div>
-        </header>
+        }
+    </script>
+</body>
 
-        <section id="showcase">
-            <div class="container">
-                <hl>
-                    <li> <a href="/../index.html">Back to Boba Home! </a></li>
-                    <li> <a href="page2.html"> Page 2! </a></li>
-                </hl>
-            </div>
-        </section>
-        <section id="updates">
-            <div class="container">
-            </div>
-        </section>
-        <section id="boxes">
-            <div class="container">
-            </div>
-        </section>
-        <footer>
-            <p>Kayla Loves Boba, Copyright &copy; 2022</p>
-            <li> <a href="./subsite/page1.html"> Subpage Special</a></li>
-        </footer>
-    </body>
 </html>
+
+
+
