@@ -70,12 +70,12 @@ body{
   }
  
   header .highlight, header .current a{
-    color:#C09984;
+    color:#a8de7e;
     font-weight:bold;
   }
  
   header a:hover{
-    color:#C09984;
+    color:#a8de7e;
     font-weight:bold;
   }
  
@@ -84,7 +84,7 @@ body{
     min-height:400px;
     background:url('../images/showw.jpg') no-repeat 50%;
     text-align:center;
-    color:black;
+    color:#a8de7e;
   }
  
   #showcase h1{
@@ -100,8 +100,8 @@ body{
   /* Newsletter */
   #updates{
     padding:15px;
-    color:#ffffff;
-    background:#DDB7AB;
+    color:#a8de7e;
+    background:#a8de7e;
   }
  
   #updates h1{
@@ -156,7 +156,7 @@ body{
   ul#services li{
     list-style: none;
     padding:20px;
-    border: #cccccc solid 1px;
+    border: #a8de7e solid 1px;
     margin-bottom:5px;
     background:#e6e6e6;
   }
@@ -164,7 +164,7 @@ body{
   footer{
     padding:20px;
     margin-top:20px;
-    color:#ffffff;
+    color:#52c862;
     background-color:#999B84;
     text-align: center;
   }
